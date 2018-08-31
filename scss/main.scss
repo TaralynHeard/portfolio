@@ -1,0 +1,27 @@
+///////////Partial Imports//////////
+@import "utilities";
+@import "about";
+@import "contact";
+@import "home";
+@import "menu";
+@import "popup";
+@import "work";
+@import "mobile";
+
+///////////Global Styles//////////
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  // color: $brown-light;
+  // background: #e6e6e6;
+  height: 100%;
+  margin: 0;
+  font-family: "Oswald", Verdana, sans-serif;
+  line-height: 1.5;
+}

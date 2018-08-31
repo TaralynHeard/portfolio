@@ -1,0 +1,145 @@
+.contact {
+  padding: 2rem 2.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/blank-business-clean-891679.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 108vh;
+  width: 100vw;
+
+  @include respond(phone) {
+    height: 152vh !important;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 9rem;
+    font-family: "Oswald", sans-serif;
+    color: $primary;
+    margin: 0;
+
+    &--sm {
+      font-size: 5rem;
+      font-family: "Oswald", sans-serif;
+      color: $primary-dark;
+
+      span {
+        color: $grey-dark;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__container {
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+
+    // @include respond(tab-port) {
+    //   width: 90%;
+    // }
+
+    // @include respond(phone) {
+    //   margin: 3rem auto;
+    // }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 45vh;
+    width: 74vw;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $grey-dark;
+    grid-gap: 2.5rem;
+    margin: 7rem auto 0 auto;
+
+    @include respond(tab-port) {
+      grid-gap: 1rem;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 1fr 1fr 1fr !important;
+      height: 105vh !important;
+      grid-gap: 1.5rem !important;
+    }
+
+    &__btn {
+      padding: 1rem 3.5rem;
+      background-color: $primary-dark;
+      color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      margin: 3rem 0;
+    }
+  }
+
+  &__email,
+  &__phone,
+  &__linkedin {
+    // background-color: rgba(#fff, 0.4);
+    background-color: rgba($secondary, 0.8);
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    &:hover,
+    &:active {
+      color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: translateY(-10px);
+      // padding: 1rem 3rem;
+      background-color: $dark-main;
+      cursor: pointer;
+    }
+  }
+
+  &__email {
+    grid-column-start: 1;
+  }
+
+  &__phone {
+    grid-column-start: 2;
+
+    @include respond(phone) {
+      grid-row-start: 2 !important;
+      grid-column-start: 1 !important;
+    }
+  }
+  &__linkedin {
+    grid-column-start: 3;
+
+    @include respond(phone) {
+      grid-row-start: 3 !important;
+      grid-column-start: 1 !important;
+    }
+  }
+
+  .fa-envelope-open,
+  .fa-mobile-alt,
+  .fa-linkedin {
+    padding: 4rem 4.5rem;
+    margin: 0.5rem 0;
+    font-size: 8.5rem;
+    color: $primary-dark;
+  }
+
+  &__btn {
+    padding: 2rem 4.5rem;
+    background-color: $primary-dark;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin: 10rem 0 0 0;
+
+    @include respond(phone) {
+      margin: 9rem 0 0 0 !important;
+    }
+  }
+}

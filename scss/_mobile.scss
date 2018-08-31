@@ -1,0 +1,596 @@
+@media screen and (max-width: 1291px) {
+  .about__header {
+    height: 83vh;
+    margin-top: 4rem;
+  }
+}
+
+///////ipad pro mobile styles/////
+//////portrait styles/////////
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .heading__1 {
+    margin-top: 23rem;
+    margin-bottom: 4rem;
+    font-size: 8rem;
+  }
+
+  .heading__2 {
+    font-size: 5.5rem;
+  }
+
+  .heading__3 {
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+  }
+
+  #home .fab {
+    font-size: 7rem;
+  }
+
+  .arrow__position {
+    left: 20%;
+    top: 90%;
+  }
+  //////About//////
+  .about__header {
+    height: 55vh;
+    margin-top: 33rem;
+    width: 70%;
+  }
+  .about__text {
+    font-size: 4rem;
+  }
+  ///////Work//////
+  #work {
+    padding: 8.5rem 4.5rem 4rem 4.5rem;
+  }
+
+  .projects {
+    grid-column-gap: 2rem;
+    grid-row-gap: 9rem;
+  }
+
+  .btn,
+  .btn__dark,
+  .btn__light {
+    font-size: 3rem;
+  }
+
+  ////////contact//////
+
+  .contact {
+    height: 75vh;
+  }
+  .contact__heading {
+    font-size: 12rem;
+  }
+
+  .contact__grid {
+    height: 32vh;
+    margin: 9rem auto 0 auto;
+  }
+  .contact__btn {
+    margin: 6rem 0 0 0;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #work {
+    padding: 8.5rem 6.5rem 4rem 7.5rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 1030px) {
+  .mug {
+    display: none;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  ////work////
+
+  #work {
+    padding: 8.5rem 4.5rem 4rem 4.5rem;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 1rem;
+  }
+
+  .three {
+    grid-row-start: 2;
+  }
+  .four {
+    grid-row-start: 2;
+    margin: 0;
+  }
+  .five {
+    grid-row-start: 3;
+    margin: 0;
+  }
+  .six {
+    grid-row-start: 3;
+    margin: 0;
+  }
+
+  /////contact/////
+  .contact__container {
+    width: 100%;
+  }
+
+  .contact__grid {
+    width: 95vw;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 960px) {
+  .about__text {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 843px) {
+  .about__header {
+    height: 92vh;
+    margin-top: 2rem;
+  }
+
+  .contact {
+    height: 132vh;
+  }
+
+  .contact__container {
+    margin: 0rem auto;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 85vh;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0;
+    width: 80vw;
+    margin: 1rem auto 0 auto;
+  }
+
+  .contact__email {
+    grid-row-start: 1;
+    margin-bottom: 0rem;
+    font-size: 2.4rem;
+  }
+
+  .contact__phone {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin-bottom: 0rem;
+  }
+  .contact__linkedin {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 0rem;
+    // width: 77vw;
+  }
+
+  .contact__email,
+  .contact__phone,
+  .contact__linkedin {
+    &:hover,
+    &:active {
+      transform: translateY(-10px);
+      // padding: 2rem;
+    }
+  }
+  .contact .fa-envelope-open,
+  .contact .fa-mobile-alt {
+    padding: 2rem 2.5rem;
+    font-size: 5.5rem;
+  }
+
+  .contact .fa-linkedin {
+    font-size: 8.5rem;
+    padding: 2rem 2.5rem;
+  }
+  .contact__grid__btn {
+    padding: 1rem 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .contact__btn {
+    margin: 8rem 0 0 0;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+/////portrait tablet overrides/////
+@media screen and (orientation: portrait) and (max-width: 768px) and (max-device-width: 768px) {
+  .heading__1 {
+    font-size: 9rem;
+  }
+  .heading__2 {
+    font-size: 4.3rem;
+  }
+  .heading__3 {
+    font-size: 4.3rem;
+  }
+
+  .contact .fa-envelope-open,
+  .contact .fa-mobile-alt,
+  .contact .fa-linkedin {
+    padding: 4rem 2.5rem;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  ////about////
+  .about__header {
+    height: 69vh;
+    margin-top: 14rem;
+    backface-visibility: hidden;
+  }
+  /////contact/////
+  .contact__linkedin {
+    width: 80vw;
+    margin-bottom: 4rem;
+  }
+
+  .contact__btn {
+    margin: 3rem 0 0 0;
+  }
+
+  .contact {
+    height: 92vh;
+  }
+
+  .contact__grid {
+    height: 70vh;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .heading__lg {
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
+  ul.menu__nav,
+  div.menu__branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu__nav.show,
+  div.menu__branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu__nav {
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 2.5rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+  }
+
+  .three {
+    grid-row-start: 2;
+  }
+  .four {
+    grid-row-start: 2;
+    margin: 0;
+  }
+  .five {
+    grid-row-start: 3;
+    margin: 0;
+  }
+  .six {
+    grid-row-start: 3;
+    margin: 0;
+  }
+
+  #work {
+    padding: 8.5rem 2.5rem 4rem 2.5rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 740px) {
+  .about__text {
+    font-size: 2.1rem;
+  }
+  .about__heading {
+    font-size: 7rem;
+  }
+  .about__header {
+    height: 78vh;
+    margin-top: 8rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 707px) {
+  #home {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .about__text {
+    font-size: 2.7rem;
+  }
+  .about__heading {
+    font-size: 6rem;
+  }
+  .about__header {
+    height: 70vh;
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .contact__linkedin {
+    width: 77vw;
+  }
+  .contact .fa-linkedin {
+    font-size: 6.5rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .about__header {
+    width: 100%;
+    height: 76vh;
+  }
+
+  .about__heading {
+    font-size: 7rem;
+  }
+
+  .about__text {
+    font-size: 2.3rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 495px) {
+  #home .heading__1 {
+    margin-top: 6rem;
+  }
+
+  .heading__2,
+  .heading__3 {
+    font-size: 3.5rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 415px) {
+  .heading__2,
+  .heading__3 {
+    font-size: 3rem;
+  }
+
+  #home .heading__1 {
+    margin-top: 9rem;
+  }
+
+  #home {
+    margin-bottom: -3rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (orientation: portrait) and (max-width: 430px) and (max-device-width: 430px) {
+  #home {
+    padding: 2.5rem;
+  }
+  #home .heading__1 {
+    margin-top: 11rem;
+    font-size: 5rem;
+  }
+  #home .heading__2,
+  #home .heading__3 {
+    font-size: 2.8rem;
+  }
+
+  .about__header {
+    height: 79vh;
+    margin-top: 2rem;
+  }
+
+  .contact__grid {
+    height: 133vh !important;
+  }
+
+  .contact {
+    height: 185vh !important;
+  }
+
+  .contact__container {
+    margin: 0 0 0 2rem !important;
+  }
+
+  .contact__linkedin {
+    width: 77vw !important;
+  }
+  .contact__btn {
+    margin: 9rem 0 0 2rem !important;
+  }
+
+  .menu__btn {
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  #home {
+    margin-bottom: 0rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+@media screen and (orientation: portrait) and (max-width: 385px) {
+  .about__header {
+    height: 89vh;
+    // margin-top: 2rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+/////////////All landscape styles////////////
+/////landscape ipad pro/////
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .heading__1 {
+    font-size: 11rem;
+  }
+  .heading__2 {
+    font-size: 6rem;
+  }
+  .heading__3 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  #home .fab {
+    font-size: 7rem;
+  }
+  .arrow__position {
+    left: 29%;
+  }
+
+  //////About//////
+  .about__header {
+    margin-top: 11rem;
+  }
+
+  .about__heading {
+    margin-bottom: 2rem;
+  }
+
+  .about__text {
+    font-size: 4rem;
+  }
+  /////contact/////
+  .contact {
+    height: 90vh;
+  }
+
+  .contact__heading {
+    font-size: 11rem;
+  }
+
+  .contact__grid {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .contact__btn {
+    margin: 7rem 0 0 0;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+/////////landscape regular ipad styles/////
+@media screen and (orientation: landscape) and (max-width: 1024px) and (max-device-width: 1024px) {
+  .heading__1 {
+    font-size: 8.2rem;
+    margin-top: 11rem;
+  }
+  ////about///
+  .about {
+    backface-visibility: hidden;
+  }
+  .about__heading {
+    font-size: 8rem;
+  }
+  .about__text {
+    font-size: 3rem;
+  }
+  //////work////
+
+  #work {
+    padding: 8.5rem 6.5rem 4rem 6.5rem;
+  }
+
+  .projects {
+    grid-gap: 4rem;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+////landscape phone styles////
+@media screen and (orientation: landscape) and (max-width: 830px) and (max-device-width: 830px) {
+  #home {
+    padding: 2.5rem;
+  }
+  .heading__1 {
+    font-size: 4.7rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  .heading__2 {
+    font-size: 3.5rem;
+  }
+  .heading__3 {
+    font-size: 3.5rem;
+  }
+
+  ///////About/////
+  .about__header {
+    margin-top: 0rem;
+    width: 86%;
+    height: 89vh;
+  }
+  .about__heading {
+    font-size: 4rem;
+  }
+  .about__text {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+  }
+
+  ////////Work//////
+  #work {
+    padding: 0.5rem 2.5rem 2rem 2.5rem;
+  }
+
+  .projects {
+    margin: 3rem auto;
+    grid-row-gap: 7rem;
+  }
+
+  //////contact//////
+
+  .contact {
+    padding: 0rem 1.5rem;
+    height: 218vh;
+  }
+
+  .contact__container {
+    width: 90%;
+  }
+  .contact__grid {
+    width: 86vw;
+    height: 124vh;
+  }
+}
